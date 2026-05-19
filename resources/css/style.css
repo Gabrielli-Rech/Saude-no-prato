@@ -159,3 +159,41 @@ h3{
     margin-bottom: 15px;
 }
 
+.info p{
+    font-size: 90%;
+    line-height: 145%;
+    text-align: justify;
+}
+
+/*****************************/
+/******** GALERIA ********/
+/*****************************/
+
+.galary ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.galary>ul>li{
+    flex-basis: 250px;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.galary>ul>li img{
+    width: 100%;
+    transform: scale(1.15);
+    transition: 1s;
+}
+
+.galary>ul>li img:hover,
+.galary>ul>li img:active{
+    transform: scale(1.05);
+    filter: blur(2px);
+    filter: brightness(110%);
+    filter: contrast(150%) saturate(125%);
+    filter: grayscale(10%);
+    filter: sepia(100%);
+    filter: drop-shadow(8px 8px 10px grey);
+}
+
